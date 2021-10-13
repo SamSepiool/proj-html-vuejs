@@ -1,13 +1,8 @@
 <template>
   <div id="app">
 
-    <header>
-      <!-- LOGO -->
-
-      <nav>
-        <!-- UL MENU -->
-      </nav>
-    </header>
+    <Header/>
+    <Main/>
 
     <main>
       <!-- SECTION  untold stories-->
@@ -30,11 +25,17 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+
+
 
 
 export default {
   name: 'App',
   components: {
+    Header,
+    Main
     
   }
 }
