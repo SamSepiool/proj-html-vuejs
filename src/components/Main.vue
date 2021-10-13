@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    <div class="latest_brand">
+    <section class="latest_brand">
       <div class="container text-white">
         <div class="row text-center py-5">
           <div class="col">
@@ -78,7 +78,11 @@
       </div>
       <FullBtn/>
       
-    </div>
+    </section>
+
+    
+
+    
   </main>
 </template>
 
@@ -102,9 +106,11 @@ export default {
 }
 .hero {
   background-image: url(../assets/img/home_slider.jpg);
-  background-size: cover;
-  background-position: bottom;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h1 {
     font-size: 9.375rem !important;
@@ -140,4 +146,6 @@ export default {
 .latest_brand {
   background-color: $secondaryGray;
 }
+
+
 </style>
