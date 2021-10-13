@@ -80,7 +80,23 @@
       
     </section>
 
-    
+    <section class="testimonial text-white">
+        <div class="container h-100">
+        <div class="row h-100 text-center align-items-center">
+          <div class="col">
+            <div class="box">
+                <p class="fs-3">
+                    "I just listened to it and said to myself, "Man, I really love this album."" Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They're good. And they're inventive I haven't heard anything this year that's as inventive I don't really expect to."
+                </p>
+                
+                <a class="play btn btn-secondary rounded-circle p-4 my-5" href="#">Play</a>
+                 
+                
+            </div>    
+          </div>
+        </div>
+      </div>
+    </section>
 
     
   </main>
@@ -101,9 +117,9 @@ export default {
 // .row{
 //     border: 1px solid blue;
 // }
-.container{
-    border: 1px solid red;
-}
+// .container{
+//     border: 1px solid red;
+// }
 .hero {
   background-image: url(../assets/img/home_slider.jpg);
   height: 100vh;
@@ -145,6 +161,26 @@ export default {
 
 .latest_brand {
   background-color: $secondaryGray;
+}
+
+.testimonial{
+    background-image: url(../assets/img/home-testimonial-parallax.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p{
+        font-style: italic;
+    }
+    .play{
+        background-color: $primaryRed;
+
+        &:hover{
+
+        }
+    }
 }
 
 
