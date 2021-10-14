@@ -1,82 +1,49 @@
 <template>
-  <header>
-      <div class="logo">
-          <img src="../assets/img/avada-music-logo-retina.png" alt="">
-      </div>
+  <header class="w-100 position-fixed">
+    <div class="container-fluid">
+        <div class="row align-items-center px-5 py-2">
 
-
-      <button id="open" @click='openMenu()' >
-          menu
-      </button>
-
-      
-    <!-- <nav id="overlay_menu" class="menu">
-
-      <button id="close" @click='closeMenu()' >chiudi</button>
-
-      <ul class="voices">
-          <li><a href="">ciao</a></li>
-          <li><a href="">ciao</a></li>
-          <li><a href="">ciao</a></li>
-          <li><a href="">ciao</a></li>
-          <li><a href="">ciao</a></li>
-          <li><a href="">ciao</a></li>
-      </ul>
-
-  </nav> -->
-      
-
+            <div class="col-lg-10">
+                <div class="logo">
+                    <img class="w-100" src="../assets/img/avada-music-logo-retina.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-2 text-end">
+                <button> <font-awesome-icon class="menu_btn" :icon='menuIcon'/> </button>
+            </div>
+        </div>
+    </div>
     
-
   </header>
 </template>
 
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faBars as faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default {
-    name: 'Header',
-    components:{
-       
-    },
-    props:{
-
-    },
-    methods:{
-       
-        
+  name: "Header",
+  props: {},
+  components: {
+      FontAwesomeIcon,
+  },
+  data(){
+    return{
+        menuIcon: faBars
     }
-
-}
+  },
+  methods: {},
+};
 </script>
 
 <style lang='scss' scoped>
-@import '../assets/style/variables.scss';
+@import "../assets/style/variables.scss";
 
-header{
-    background-color: transparent;
-    padding: .75rem 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
+header {
+  background-color: transparent;
 
-
-    .logo{
-        width: 20rem;
-        img{
-            width: 100%;
-        }
+  .logo {
+    width: 20rem;
     }
-  
-    
-  
-
-   
 }
-    
-
-   
-
-
 </style>
