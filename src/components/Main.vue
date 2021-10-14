@@ -85,17 +85,44 @@
         <div class="row h-100 text-center align-items-center">
           <div class="col">
             <div class="box">
-                <p class="fs-3">
+                <p class="fs-3 mb-5">
                     "I just listened to it and said to myself, "Man, I really love this album."" Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They're good. And they're inventive I haven't heard anything this year that's as inventive I don't really expect to."
                 </p>
-                
-                <a class="play btn btn-secondary rounded-circle p-4 my-5" href="#">Play</a>
-                 
-                
+                <a class="" href="#"><img src="../assets/img/band_interview_play_icon.png" alt=""></a>
             </div>    
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="live_dates">
+
+        <div class="container text-white">
+            <div class="row text-center py-5">
+                <div class="col">
+                    <h2 class="fs-1 fw-bold">Live Dates</h2>
+                    <hr class="mx-auto mb-4" />
+                    <div class="box">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa
+                    dolores rerum nostrum quam reiciendis voluptatem error animi,
+                    maiores adipisci sapiente vero magnam qui ut. Earum est totam
+                    ipsa impedit?
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+
+            <img class="w-100" src="http://www.tacchi.it/wp-content/uploads/2017/11/pp-work-in-progress-624x434.jpg" alt="">
+
+        </div>
+
+        <FullBtn/>
+
+
     </section>
 
     
@@ -150,7 +177,7 @@ export default {
 }
 
 .is_life {
-  background-color: $primaryGray;
+  background-color: $secondaryGray;
 
   .bookmark {
     background-color: $primaryRed;
@@ -160,7 +187,7 @@ export default {
 }
 
 .latest_brand {
-  background-color: $secondaryGray;
+  background-color: $primaryGray;
 }
 
 .testimonial{
@@ -174,13 +201,10 @@ export default {
     p{
         font-style: italic;
     }
-    .play{
-        background-color: $primaryRed;
+}
 
-        &:hover{
-
-        }
-    }
+.live_dates{
+    background-color: $primaryGray;
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-  <a class="full_btn">VIEW ALL LATEST NEWS</a>
+  <a class="full_btn btn">VIEW ALL LATEST NEWS</a>
 </template>
 
 <script>
