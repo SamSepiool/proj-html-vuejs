@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-8">
-                        <p>© Copyright 2012 - 2021 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
+                        <p>© Copyright 2012 - 2021 | Avada Theme by <a>ThemeFusion</a> | All Rights Reserved | Powered by <a>WordPress</a></p>
                     </div>
                     <div class="col-lg-4">
                         <ul class="d-flex justify-content-end">
@@ -102,8 +102,6 @@ color: $gray;
         
     }
 
-    
-        
     a{
         text-decoration: none;
         color:inherit
@@ -116,7 +114,8 @@ color: $gray;
 .bottom{
     background-color: $footerBottom;
 
-    span{
+    a{
+        text-decoration: none;
         color:$primaryRed;
     }
 

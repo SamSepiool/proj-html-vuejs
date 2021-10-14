@@ -40,7 +40,7 @@
             <h2 class="fs-1 fw-bold">Music is Life</h2>
             <hr class="mx-auto mb-4" />
             <div class="box">
-              <p>
+              <p class="section_text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa
                 dolores rerum nostrum quam reiciendis voluptatem error animi,
                 maiores adipisci sapiente vero magnam qui ut. Earum est totam
@@ -59,7 +59,7 @@
             <h2 class="fs-1 fw-bold">Latest Brand News</h2>
             <hr class="mx-auto mb-4" />
             <div class="box">
-              <p>
+              <p class="section_text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa
                 dolores rerum nostrum quam reiciendis voluptatem error animi,
                 maiores adipisci sapiente vero magnam qui ut. Earum est totam
@@ -103,7 +103,7 @@
                     <h2 class="fs-1 fw-bold">Live Dates</h2>
                     <hr class="mx-auto mb-4" />
                     <div class="box">
-                    <p>
+                    <p class="section_text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa
                     dolores rerum nostrum quam reiciendis voluptatem error animi,
                     maiores adipisci sapiente vero magnam qui ut. Earum est totam
@@ -141,12 +141,7 @@ export default {
 
 <style lang='scss' scoped>
 @import "../assets/style/variables.scss";
-// .row{
-//     border: 1px solid blue;
-// }
-// .container{
-//     border: 1px solid red;
-// }
+
 .hero {
   background-image: url(../assets/img/home_slider.jpg);
   height: 100vh;
@@ -184,6 +179,7 @@ export default {
     height: 0.75rem;
     width: 40%;
   }
+
 }
 
 .latest_brand {
@@ -198,9 +194,6 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 
-    p{
-        font-style: italic;
-    }
 }
 
 .live_dates{
