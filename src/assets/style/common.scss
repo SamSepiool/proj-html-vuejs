@@ -9,9 +9,11 @@
     box-sizing: border-box;
 }
 
+
 hr{
     width: 12.5rem; 
-}
+} 
+
 ul{
     list-style: none;
 }
@@ -19,4 +21,8 @@ ul{
 .box{
     max-width: 60%;
     margin: auto;
+}
+
+.section_text{
+    color: $gray;
 }
