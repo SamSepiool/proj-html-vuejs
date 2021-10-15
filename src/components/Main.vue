@@ -175,9 +175,9 @@ export default {
   background-color: $secondaryGray;
 
   .bookmark {
-    background-color: $primaryRed;
-    height: 0.75rem;
-    width: 40%;
+  background-color: $primaryRed;
+  height: 0.75rem;
+  width: 40%;
   }
 
 }
@@ -187,12 +187,16 @@ export default {
 }
 
 .testimonial{
-    background-image: url(../assets/img/home-testimonial-parallax.jpg);
-    height: 80vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../assets/img/home-testimonial-parallax.jpg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p{
+    font-style: italic;
+  }
 
 }
 

@@ -9,8 +9,27 @@
                 </div>
             </div>
             <div class="col-lg-2 text-end">
-                <a> <font-awesome-icon class="fs-3 text-white" :icon='menuIcon'/> </a>
+                <span @click='openMenu = !openMenu'> <font-awesome-icon class="fs-3 text-white" :icon='openMenuIcon'/> </span>
             </div>
+            
+            <transition name="menu">
+              <nav v-if="openMenu">
+
+                <div class="text-end p-5">
+                  <span @click='openMenu = !openMenu'> <font-awesome-icon class="fs-2 text-white" :icon='closeMenuIcon'/> </span>
+                </div>
+
+                <ul class="d-flex flex-column justify-content-evenly text-center">
+                  <li>link</li>
+                  <li>link</li>
+                  <li>link</li>
+                  <li>link</li>
+                  <li>link</li>
+                </ul>
+              </nav>
+            </transition>
+            
+            
         </div>
     </div>
     
@@ -20,6 +39,9 @@
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBars as faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes as faTimes } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default {
   name: "Header",
@@ -29,7 +51,10 @@ export default {
   },
   data(){
     return{
-        menuIcon: faBars
+        openMenuIcon: faBars,
+        closeMenuIcon: faTimes,
+
+        openMenu: false,
     }
   },
   methods: {},
@@ -40,10 +65,32 @@ export default {
 @import "../assets/style/variables.scss";
 
 header {
-  background-color: transparent;
+background-color: transparent;
 
-    .logo {
-        width: 20rem;
-    } 
+  .logo {
+    width: 20rem;
+  }
+  
+  
+  // MENU-OPEN
+  nav{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primaryRed;
+    
+    ul{
+      height: 80%;
+    }
+  }
+  // MENU-TRANSITION
+  .menu-enter-active, .menu-leave-active {
+    transition: opacity .8s ease-out;
+  }
+  .menu-enter, .menu-leave-to{
+    opacity: 0;
+  }
 }
 </style>
