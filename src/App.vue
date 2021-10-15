@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <Header/>
+    <Header :links='menuLinks'/>
     <Main/>
     <Footer :links="footerLinks" />
 
@@ -53,6 +53,34 @@ export default {
           name: 'Fans',
           url: '#'
         },
+      ],
+      menuLinks:[
+        {
+          name: 'Home',
+          url: '#'
+        },
+         {
+          name: 'Meet The band',
+          url: '#'
+        },
+         {
+          name: 'Live Dates',
+          url: '#'
+        },
+         {
+          name: 'Latest News',
+          url: '#'
+        },
+         {
+          name: 'Albums',
+          url: '#'
+        },
+         {
+          name: 'Fans',
+          url: '#'
+        },
+          
+        
       ]
     }
   }

@@ -20,11 +20,7 @@
                 </div>
 
                 <ul class="d-flex flex-column justify-content-evenly text-center">
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
+                  <li v-for="(link, index) in links" :key="index"><a class="fs-2" :href="link.url">{{link.name}}</a></li>
                 </ul>
               </nav>
             </transition>
@@ -45,7 +41,9 @@ import { faTimes as faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   name: "Header",
-  props: {},
+  props: {
+    links: Array,
+  },
   components: {
       FontAwesomeIcon,
   },
@@ -80,9 +78,18 @@ background-color: transparent;
     top: 0;
     left: 0;
     background-color: $primaryRed;
-    
+
     ul{
       height: 80%;
+
+      a{
+        text-decoration: none;
+        color: $menuLinks;
+
+        &:hover{
+          color: $white;
+        }
+      }
     }
   }
   // MENU-TRANSITION
