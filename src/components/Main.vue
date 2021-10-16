@@ -123,7 +123,7 @@
       
       <div class="container py-5">
 
-<!-- OPENING REQUIRES FIX-------------- OPENING REQUIRES FIX -->
+
 
         <div class="accordion accordion-flush" id="accordionExample">
           <div class="accordion-item">
@@ -187,15 +187,15 @@
                 class="accordion-button fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseTwo"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseTwo"
               >
                 17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
               </button>
             </h2>
             <div
-              id="collapseOne"
+              id="collapseTwo"
               class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
@@ -242,15 +242,15 @@
                 class="accordion-button fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseThree"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseThree"
               >
                 17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
               </button>
             </h2>
             <div
-              id="collapseOne"
+              id="collapseThree"
               class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
@@ -297,15 +297,15 @@
                 class="accordion-button fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseFour"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseFour"
               >
                 17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
               </button>
             </h2>
             <div
-              id="collapseOne"
+              id="collapseFour"
               class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
@@ -352,15 +352,15 @@
                 class="accordion-button fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseFive"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseFive"
               >
                 17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
               </button>
             </h2>
             <div
-              id="collapseOne"
+              id="collapseFive"
               class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
@@ -402,7 +402,7 @@
           </div>
         </div>
 
-<!-- OPENING REQUIRES FIX-------------- OPENING REQUIRES FIX -->
+
 
       </div>
 
@@ -448,12 +448,12 @@ export default {
       border: none;
     }
     & button:last-child {
-      border-color: white;
-      color: white;
+      border-color: $white;
+      color: $white;
     }
 
     button:hover {
-      background-color: white;
+      background-color: $white;
       color: black;
     }
   }
@@ -492,7 +492,7 @@ export default {
   .accordion {
     .accordion-item {
       border: none;
-      margin-bottom: 10px;
+      margin-bottom: .625rem;
     }
 
     .accordion-button {
@@ -507,16 +507,15 @@ export default {
     .accordion-body {
       background-color: $secondaryGray;
       img {
-        width: 300px;
-        border: 1px solid red;
-        margin-right: 20px;
+        width: 18.75rem;
+        margin-right: 1.25rem;
       }
       button {
         background-color: $primaryRed;
         border: none;
 
         &:hover {
-          background-color: white;
+          background-color: $white;
           color: black;
         }
       }
